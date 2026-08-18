@@ -10,8 +10,8 @@ export const content = {
   ],
   name: 'Michiel van Woerkom',
   email: {
-    label: 'hello@nanas.no',
-    href: 'mailto:hello@nanas.no',
+    label: 'michiel@nanas.no',
+    href: 'mailto:michiel@nanas.no',
   },
   linkedin: {
     label: 'LinkedIn',
