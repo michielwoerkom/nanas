@@ -1,0 +1,146 @@
+.nan-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: clamp(28px, 6vh, 56px) 24px;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: min(100%, 25rem);
+  gap: 2.1rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--lime);
+}
+
+.pineapple {
+  width: min(38%, 128px);
+  height: auto;
+  overflow: visible;
+}
+
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.28em;
+  margin: 1rem 0 0;
+  color: var(--lime);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+}
+
+.nan {
+  font-size: clamp(2.15rem, 7vw, 3.15rem);
+}
+
+.as {
+  font-size: clamp(1.5rem, 4.8vw, 2.2rem);
+}
+
+.tagline {
+  margin: 0.85rem 0 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+}
+
+.services {
+  margin: 0;
+  padding: 1.35rem 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  border-top: 1px solid rgba(201, 247, 79, 0.22);
+}
+
+.services li {
+  position: relative;
+  padding-left: 1.15em;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+.services li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.52em;
+  width: 0.28em;
+  height: 0.28em;
+  border-radius: 50%;
+  background: var(--lime);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(201, 247, 79, 0.22);
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.15rem;
+}
+
+.name {
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.contact-links a {
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.contact-links a:focus-visible {
+  outline: 1px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.addressAndOrgNumber {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}

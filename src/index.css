@@ -1,0 +1,38 @@
+:root {
+  --anthracite: #141618;
+  --lime: #c9f74f;
+  --text: #edf0e4;
+  --muted: #8b9080;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--anthracite);
+  color: var(--text);
+  font-family: Montserrat, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--anthracite);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
