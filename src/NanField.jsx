@@ -3,7 +3,13 @@ import { useEffect, useRef } from 'react'
 const TOKENS = [
   '0',
   '1',
+  '2',
+  '14',
+  '3.14',
   '0.0',
+  '5',
+  '28',
+  '16',
   '1.0',
   '-0',
   '0.1',
@@ -16,9 +22,9 @@ const TOKENS = [
   '-Inf',
   '1e3',
   '8',
-  'NaN',
   '69',
   '420',
+  '13'
 ]
 
 const LIME = { r: 201, g: 247, b: 79 }
